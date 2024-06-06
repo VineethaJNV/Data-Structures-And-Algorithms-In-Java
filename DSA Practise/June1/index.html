@@ -1,0 +1,70 @@
+<!-- html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Concept</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <h1 class="h1">DB Concept</h1>
+        <p class="p1">Rewa Road, Bhagwanpur, In front of Fedderal bank</p>
+        <p class="p2">Mob.: 9122604366, 9122604368</p>
+        <button class="btn">Money Receipt</button>
+        <p class="p3">Sl.No.  205 <p class="p4">Date ..........</p></p>
+        <p class="p5">Received with thanks from Mr./Miss .....................................................................</p>
+        <p class="p6">Sum of Rs. .................................................................................................. for the</p>
+        <p class="p7">Months of ......................................... next payment date .......................................</p>
+        <button class="btn2">Rs. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <p class="p8">Signature</p>
+
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Concept</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+       
+        <form id="userInputForm">
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date"><br><br>
+            <label for="money">Money:</label>
+            <input type="text" id="money" name="money"><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="months">Number of Months:</label>
+            <input type="text" id="months" name="months"><br><br>
+            <label for="nextPaymentDate">Next Payment Date:</label>
+            <input type="text" id="nextPaymentDate" name="nextPaymentDate"><br><br>
+            <button type="button" class="btn" onclick="generateCertificate()">Generate Certificate</button>
+        </form>
+        <div class="container" id="certificate" style="display: none;">
+            <h1 class="h1">DB Concept</h1>
+            <p class="p1">Rewa Road, Bhagwanpur, In front of Fedderal bank</p>
+            <p class="p2">Mob.: 9122604366, 9122604368</p>
+            <button class="btn">Money Receipt</button>
+            <p class="p3">Sl.No.  205 <p class="p4" id="certificateDate">Date ..........</p></p>
+            <p class="p5" id="certificateName">Received with thanks from Mr./Miss .....................................................................</p>
+            <p class="p6">Sum of Rs. <span id="certificateMoney">.........................................................</span> for the</p>
+            <p class="p7">Months of <span id="certificateMonths">.....................................</span> next payment date <span id="certificateNextPaymentDate">.....................................</span></p>
+            <button class="btn2" id="certificateMoneyButton">Rs. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <p class="p8">Signature</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
